@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import {Posts} from "../posts/Posts";
 import {getUserPosts} from "../../services/users.service";
+import './User.css';
 
 export function User({oneUser:{id,name,username}}){
 
@@ -12,7 +13,7 @@ export function User({oneUser:{id,name,username}}){
     },[]);
 
     return(
-        <div>
+        <div className={'user'}>
             <h1>User {id}</h1>
             <h3>{id}-{name}-{username}</h3>
             <Posts posts={posts}/>

@@ -1,0 +1,7 @@
+.user{
+    border: 6px solid black;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #abaeb9;
+}
