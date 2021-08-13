@@ -1,11 +1,13 @@
 import './App.css';
 
-function App() {
-    return (
-        <div className="App">
+import {Users} from "./components/users/Users";
 
-        </div>
-    );
+//Отримати всі user з jsonplaceholder та вивести їх. до кожного user
+// зробити кнопку при натисканні якої виводиться всі пости поточного юзера в межах Users компоненти
+function App() {
+    return <div>
+        <Users/>
+    </div>
 }
 
 export default App;

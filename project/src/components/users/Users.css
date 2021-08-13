@@ -1,0 +1,10 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.users-box {
+    width: 500px;
+    background-color: greenyellow;
+}
+

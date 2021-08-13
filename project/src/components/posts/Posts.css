@@ -1,0 +1,7 @@
+.posts-box {
+    width: 700px;
+    height: fit-content;
+    padding: 10px;
+    background-color: palegreen;
+    border: 2px solid black;
+}
