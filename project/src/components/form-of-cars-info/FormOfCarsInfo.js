@@ -1,6 +1,5 @@
 import {useState} from "react";
 import {postCars} from "../../services/car.service";
-import './FormOfCarsInfo.css';
 
 export function FormOfCarsInfo() {
     let [value, setValue] = useState({model: '', price: '', year: ''});
