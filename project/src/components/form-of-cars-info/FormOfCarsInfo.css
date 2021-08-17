@@ -1,0 +1,9 @@
+.content{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.error-box{
+    line-height: 0.1;
+    color: red;
+}
