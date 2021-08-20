@@ -1,0 +1,8 @@
+.posts{
+    display: flex;
+    column-gap: 200px;
+}
+.posts a{
+    text-decoration: none;
+    color: red;
+}
