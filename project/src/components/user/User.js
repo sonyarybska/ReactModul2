@@ -1,13 +1,14 @@
-import {
-  Link
-} from "react-router-dom";
+
 import "./User.css";
 
-export function User({oneUser:{id,name},url}){
+export function User({oneUser:{id,name},url,history}){
+    let toNavigate=()=>{
+        history.push(url+'/'+id)
+    };
     return(
         <div className={'oneUser'}>
             <h4>{id}-{name}</h4>
-            <Link to={url+'/'+id}><button>Details</button></Link>
+            <button onClick={toNavigate}>Details</button>
         </div>
     )
 }

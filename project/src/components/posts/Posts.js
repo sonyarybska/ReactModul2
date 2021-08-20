@@ -21,7 +21,7 @@ export function Posts(props) {
                     posts.map(value => <Post key={value.id} url={url} onePost={value}/>)
                 }
             </div>
-            <Route path={'/posts/:id'} render={(props) => <PostDetails {...props}/>}/>
+            <Route path={`${url}/:id`} render={(props) => <PostDetails {...props}/>}/>
         </div>
     )
 }
