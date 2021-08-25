@@ -3,22 +3,13 @@
 // Стоврити 2 кнопки.
 // Перша збільшує   значення на 10
 // Друга зменшує на 2.
-//
-// Зміну стану та виведення реалізувати через redcer
+// Зміну стану та виведення реалізувати через reducer
 
 import {useReducer} from "react";
+import reducer from "../../reducers/reduce.counter";
 
 export function Counter(){
-    let reducer=(state,action)=>{
-        switch (action.type){
-            case 'INC_BY_10':
-                return {...state,obj:state.obj+10}
-            case 'DEC_BY_2':
-                return {...state,obj: state.obj-2}
-            default:
-                return {...state}
-        }
-    }
+
     let [{obj},dispatch]=useReducer(reducer,{obj:0});
 
     return(
